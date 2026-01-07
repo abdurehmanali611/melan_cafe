@@ -1,10 +1,16 @@
 "use client";
-import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
-import "leaflet/dist/leaflet.css";
 import { Card, CardContent } from "./ui/card";
 import Link from "next/link";
 import { NavbarContents, SocialMedia } from "@/Constants";
-import { Icon } from '@iconify/react'
+import { Icon } from "@iconify/react";
+import dynamic from "next/dynamic";
+
+const Map = dynamic(() => import("./MapComponent"), {
+  ssr: false,
+  loading: () => (
+    <div className="w-75 h-75 bg-gray-200 rounded-lg animate-pulse" />
+  ),
+});
 
 const Footer = () => {
   return (
@@ -14,26 +20,7 @@ const Footer = () => {
           <div className="flex justify-between items-center">
             <div className="flex flex-col gap-5">
               <h2 className="text-lg font-serif font-semibold">HeadQuarter</h2>
-              <MapContainer
-                center={[51.505, -0.09]}
-                zoom={13}
-                scrollWheelZoom={false}
-                style={{
-                  width: "300px",
-                  height: "300px",
-                  borderRadius: "10px",
-                }}
-              >
-                <TileLayer
-                  attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-                  url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                />
-                <Marker position={[51.505, -0.09]}>
-                  <Popup>
-                    A pretty CSS3 popup. <br /> Easily customizable.
-                  </Popup>
-                </Marker>
-              </MapContainer>
+              <Map />
               <p className="text-lg font-serif font-semibold">
                 Bole, Wollo Sefer
               </p>
@@ -72,10 +59,10 @@ const Footer = () => {
           <div className="flex flex-row-reverse justify-between items-center">
             <ul className="flex items-center gap-8 sm:gap-16">
               {SocialMedia.map((item) => (
-                  <Link key={item.id} href={item.link}>
-                    <Icon icon={item.icon} className="w-7 h-7"/>
-                  </Link>
-                ))}
+                <Link key={item.id} href={item.link}>
+                  <Icon icon={item.icon} className="w-7 h-7" />
+                </Link>
+              ))}
             </ul>
             <p className="self-end">&copy; 2026 All Rights Reserved</p>
           </div>

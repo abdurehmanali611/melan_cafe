@@ -40,7 +40,7 @@ export default function Home() {
       </section>
       <section>
         <h2 className="text-xl uppercase text-green-500 font-semibold text-center">Services</h2>
-        <h3 className="text-lg font-bold font-sans mt-5 text-center">Our Food and Drink Deliverables</h3>
+        <h3 className="text-lg font-bold font-sans my-5 text-center">Our Food and Drink Deliverables</h3>
         <ServiceGrid services={sampleServices} />
         {services.length > 3 && (
           <Button onClick={() => router.push('/Services')}>View More</Button>

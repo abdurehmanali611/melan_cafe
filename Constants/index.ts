@@ -60,7 +60,7 @@ export const Testimonials = [
 
 export const Service = [
   {
-    title: "Fuel",
+    title: "Lunch",
     type: "Food",
     name: "Protein",
     price: 440,
@@ -72,7 +72,7 @@ export const Service = [
     New: false
   },
   {
-    title: "Fuel",
+    title: "BreakFast",
     type: "Food",
     name: "Protein",
     price: 440,
@@ -84,7 +84,7 @@ export const Service = [
     New: true
   },
   {
-    title: "Fuel",
+    title: "Workout Fuel",
     type: "Food",
     name: "Protein",
     price: 440,
@@ -133,5 +133,40 @@ export const SocialMedia = [
     name: "Tiktok",
     link: "https://www.tiktok.com/",
     icon: "logos:tiktok-icon"
+  }
+]
+
+export const selectionServices = [
+  {
+    id: 1,
+    name: "Default"
+  },
+  {
+    id: 2,
+    name: "Food"
+  },
+  {
+    id: 3,
+    name: "Drink"
+  },
+  {
+    id: 4,
+    name: "Workout Fuel"
+  },
+  {
+    id: 5,
+    name: "BreakFast"
+  },
+  {
+    id: 6,
+    name: "Lunch"
+  },
+  {
+    id: 7,
+    name: "Dinner"
+  },
+  {
+    id: 8,
+    name: "Snacks"
   }
 ]

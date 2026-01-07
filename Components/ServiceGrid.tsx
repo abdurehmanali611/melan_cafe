@@ -1,4 +1,3 @@
-import SectionHeader from "./SectionHeader";
 import ServiceItem from "./ServiceItem";
 
 interface Service {
@@ -19,7 +18,7 @@ interface ServiceProps {
 
 export default function ServiceGrid({ services }: ServiceProps) {
   return (
-    <div className="w-full py-5">
+    <div className="w-full">
       <div className="container mx-auto px-4 py-5 flex flex-col gap-5">
         <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-6 items-center">
           {services &&
