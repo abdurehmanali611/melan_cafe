@@ -9,6 +9,8 @@ interface Service {
   nutrient: Array<string>
   price: number;
   type: string
+  popular: boolean
+  New: boolean
 }
 
 interface ServiceProps {
@@ -19,11 +21,7 @@ export default function ServiceGrid({ services }: ServiceProps) {
   return (
     <div className="w-full py-5">
       <div className="container mx-auto px-4 py-5 flex flex-col gap-5">
-        <SectionHeader
-          subtitle="Services"
-          title="Our Food and Drink Deliverables"
-        />
-        <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-6 mt-8 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-6 items-center">
           {services &&
             services.length > 0 &&
             services.map((service: Service, idx: number) => (
@@ -36,6 +34,8 @@ export default function ServiceGrid({ services }: ServiceProps) {
                 type={service.type}
                 title={service.title}
                 description={service.description}
+                popular={service.popular}
+                New={service.New}
               />
             ))}
         </div>

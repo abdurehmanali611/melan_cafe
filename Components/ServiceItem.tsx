@@ -16,6 +16,8 @@ interface Service {
   nutrient: Array<string>;
   price: number;
   type: string;
+  popular: boolean
+  New: boolean
 }
 
 export default function ServiceItem({
@@ -26,6 +28,8 @@ export default function ServiceItem({
   type,
   title,
   description,
+  popular,
+  New
 }: Service) {
   return (
     <Card>

@@ -4,7 +4,7 @@ import { Testimonials } from "@/Constants";
 
 export default function About() {
   return (
-    <div className="flex flex-col gap-10">
+    <div className="flex flex-col gap-10 p-10">
       <section>
         <AboutContent />
       </section>

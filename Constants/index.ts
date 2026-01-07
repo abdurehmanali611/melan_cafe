@@ -68,6 +68,8 @@ export const Service = [
     description:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit dolor iusto ad molestias",
     nutrient: ["Protein", "Carbohydrate"],
+    popular: true,
+    New: false
   },
   {
     title: "Fuel",
@@ -78,6 +80,8 @@ export const Service = [
     description:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit dolor iusto ad molestias",
     nutrient: ["Protein", "Carbohydrate"],
+    popular: false,
+    New: true
   },
   {
     title: "Fuel",
@@ -88,6 +92,8 @@ export const Service = [
     description:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit dolor iusto ad molestias",
     nutrient: ["Protein", "Carbohydrate"],
+    popular: true,
+    New: true
   },
 ];
 
