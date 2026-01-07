@@ -9,7 +9,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { selectionServices, Service } from "@/Constants";
+import { selectionServices, Service } from "@/siteConstants";
 import { useState, useEffect } from "react";
 
 export default function Services() {

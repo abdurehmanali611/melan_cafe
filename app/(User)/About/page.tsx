@@ -1,6 +1,6 @@
 import AboutContent from "@/components/AboutContent";
 import TestimonialsCarousel from "@/components/TestimonialCarousel";
-import { Testimonials } from "@/Constants";
+import { Testimonials } from "@/siteConstants";
 
 export default function About() {
   return (

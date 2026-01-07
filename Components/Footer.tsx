@@ -1,7 +1,7 @@
 "use client";
 import { Card, CardContent } from "./ui/card";
 import Link from "next/link";
-import { NavbarContents, SocialMedia } from "@/Constants";
+import { NavbarContents, SocialMedia } from "@/siteConstants";
 import { Icon } from "@iconify/react";
 import dynamic from "next/dynamic";
 

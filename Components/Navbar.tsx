@@ -1,5 +1,5 @@
 "use client";
-import { NavbarContents } from "@/Constants";
+import { NavbarContents } from "@/siteConstants";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";

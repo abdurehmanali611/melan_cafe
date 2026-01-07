@@ -7,7 +7,7 @@ import {
   CardTitle,
 } from "./ui/card";
 import { Button } from "./ui/button";
-import { HeroFooter } from "../Constants";
+import { HeroFooter } from "@/siteConstants";
 
 const Hero = () => {
   return (
@@ -27,7 +27,9 @@ const Hero = () => {
                   iusto sint et aut laudantium itaque error enim harum
                   perferendis necessitatibus suscipit beatae.
                 </p>
-                <Button className="cursor-pointer bg-green-500">Learn More</Button>
+                <Button className="cursor-pointer bg-green-500">
+                  Learn More
+                </Button>
               </div>
             </CardContent>
           </Card>

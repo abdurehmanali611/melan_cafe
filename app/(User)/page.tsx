@@ -3,9 +3,9 @@ import AboutContent from "@/components/AboutContent";
 import GalleryGrid from "@/components/GalleryGrid";
 import Hero from "@/components/Hero";
 import ServiceGrid from "@/components/ServiceGrid";
-import TestimonialsCarousel from "@/components/TestimonialCarousel";
+import TestimonialsCarousel from "@/components/TestimonialsCarousel";
 import { Button } from "@/components/ui/button";
-import { Galleries, Service, Testimonials } from "@/Constants";
+import { Galleries, Service, Testimonials } from "@/siteConstants";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
