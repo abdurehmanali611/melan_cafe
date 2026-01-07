@@ -1,5 +1,5 @@
-import AboutContent from "@/Components/AboutContent";
-import TestimonialsCarousel from "@/Components/TestimonialCarousel";
+import AboutContent from "@/components/AboutContent";
+import TestimonialsCarousel from "@/components/TestimonialCarousel";
 import { Testimonials } from "@/Constants";
 
 export default function About() {

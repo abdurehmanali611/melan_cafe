@@ -1,5 +1,5 @@
 "use client";
-import ServiceGrid from "@/Components/ServiceGrid";
+import ServiceGrid from "@/components/ServiceGrid";
 import {
   Select,
   SelectContent,
@@ -8,7 +8,7 @@ import {
   SelectLabel,
   SelectTrigger,
   SelectValue,
-} from "@/Components/ui/select";
+} from "@/components/ui/select";
 import { selectionServices, Service } from "@/Constants";
 import { useState, useEffect } from "react";
 
@@ -23,14 +23,15 @@ export default function Services() {
   const popularServices = services.filter((service) => service.popular == true);
   const newServices = services.filter((service) => service.New == true);
   const filteredServices = services.filter(
-    (service) => 
-      service.title === serviceSelected || 
-      service.type === serviceSelected
+    (service) =>
+      service.title === serviceSelected || service.type === serviceSelected
   );
   return (
     <div className="flex flex-col gap-5 py-10">
       <div className="flex justify-end items-center gap-5">
-        <h5 className="text-lg font-serif font-semibold text-green-500">Select a service:</h5>
+        <h5 className="text-lg font-serif font-semibold text-green-500">
+          Select a service:
+        </h5>
         <Select
           value={serviceSelected || "Default"}
           onValueChange={(value) => setServiceSelected(value)}
@@ -66,7 +67,7 @@ export default function Services() {
               <ServiceGrid services={newServices} />
             </section>
           </div>
-        ): (
+        ) : (
           <div>
             <section>
               <h2 className="text-xl text-green-500 font-semibold font-serif">

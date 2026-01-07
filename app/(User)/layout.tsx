@@ -1,6 +1,6 @@
-import Footer from "@/Components/Footer";
-import Navbar from "@/Components/Navbar";
-import { ThemeProvider } from "@/Components/theme-provider";
+import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
+import { ThemeProvider } from "@/components/theme-provider";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
