@@ -20,10 +20,12 @@ export default function Services() {
       await setServices(Service);
     })();
   }, []);
-  const popularServices = services.filter((service) => service.popular == true);
-  const newServices = services.filter((service) => service.New == true);
+  const popularServices = services.filter(
+    (service: any) => service.popular == true
+  );
+  const newServices = services.filter((service: any) => service.New == true);
   const filteredServices = services.filter(
-    (service) =>
+    (service: any) =>
       service.title === serviceSelected || service.type === serviceSelected
   );
   return (
