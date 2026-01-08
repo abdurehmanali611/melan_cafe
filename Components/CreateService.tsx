@@ -36,7 +36,7 @@ const CreateService = () => {
     },
   });
   return (
-    <Card className="w-fit p-5">
+    <Card className="w-fit p-3">
       <CardHeader className="text-center">
         <CardTitle>Create a Service</CardTitle>
         <CardDescription>Create a new Service to Offer</CardDescription>
