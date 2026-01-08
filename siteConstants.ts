@@ -79,27 +79,6 @@ export const Galleries = [
   { image: "/assets/drink_3.jpg", type: "Drink", title: "Drink 3" },
 ];
 
-export const SocialMedia = [
-  {
-    id: 1,
-    name: "Facebook",
-    link: "https://www.facebook.com/",
-    icon: "logos:facebook",
-  },
-  {
-    id: 2,
-    name: "Telegram",
-    link: "https://www.telegram.com/",
-    icon: "logos:telegram",
-  },
-  {
-    id: 3,
-    name: "Tiktok",
-    link: "https://www.tiktok.com/",
-    icon: "logos:tiktok-icon",
-  },
-];
-
 export const selectionServices = [
   { id: 1, name: "Default" },
   { id: 2, name: "Food" },
@@ -137,4 +116,4 @@ export const workout = [
   }
 ]
 
-export const Service = fetchedServices ? fetchedServices : dummyservice;
+export const Service = fetchedServices && fetchedServices.length > 0 ? fetchedServices : dummyservice;

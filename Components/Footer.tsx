@@ -1,8 +1,7 @@
 "use client";
 import { Card, CardContent } from "./ui/card";
 import Link from "next/link";
-import { NavbarContents, SocialMedia } from "@/siteConstants";
-import { Icon } from "@iconify/react";
+import { NavbarContents } from "@/siteConstants";
 import dynamic from "next/dynamic";
 
 const Map = dynamic(() => import("./MapComponent"), {
@@ -56,16 +55,7 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <div className="flex flex-row-reverse justify-between items-center">
-            <ul className="flex items-center gap-8 sm:gap-16">
-              {SocialMedia.map((item) => (
-                <Link key={item.id} href={item.link}>
-                  <Icon icon={item.icon} className="w-7 h-7" />
-                </Link>
-              ))}
-            </ul>
-            <p className="self-end">&copy; 2026 All Rights Reserved</p>
-          </div>
+          <p className="self-end">&copy; 2026 All Rights Reserved</p>
         </div>
       </CardContent>
     </Card>
