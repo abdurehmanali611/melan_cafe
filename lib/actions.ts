@@ -51,7 +51,8 @@ export async function LoggingIn(values: Login, router: AppRouterInstance) {
     const response = await axios.post("/api/admin/login", values);
     const data = response.data;
     console.log(data);
-    router.push(`/Dashboard?password=${values.password}`);
+    localStorage.setItem("password", values.password)
+    router.push("/Dashboard");
   } catch (error: unknown) {
     let errorMessage = "Unknown Error Occured";
     if (axios.isAxiosError(error)) {
