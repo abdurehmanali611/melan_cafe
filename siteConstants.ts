@@ -1,3 +1,5 @@
+import { GetServices } from "./lib/actions";
+
 export const NavbarContents = [
   { id: 1, name: "Home", link: "/" },
   { id: 2, name: "About Us", link: "/About" },
@@ -30,7 +32,7 @@ export const Testimonials = [
   },
 ];
 
-export const Service = [
+const dummyservice = [
   {
     title: "Lunch",
     type: "Food",
@@ -69,6 +71,8 @@ export const Service = [
   },
 ];
 
+const fetchedServices = await GetServices();
+
 export const Galleries = [
   { image: "/assets/drink_1.jpg", type: "Drink", title: "Drink 1" },
   { image: "/assets/drink_2.jpg", type: "Drink", title: "Drink 2" },
@@ -106,3 +110,31 @@ export const selectionServices = [
   { id: 7, name: "Dinner" },
   { id: 8, name: "Snacks" },
 ];
+
+export const serviceTitles = [
+  {
+    id: 1,
+    name: "BreakFast",
+  },
+  {
+    id: 2,
+    name: "Lunch",
+  },
+  {
+    id: 3,
+    name: "Dinner",
+  },
+];
+
+export const workout = [
+  {
+    id: 1,
+    name: "Workout Fuel"
+  },
+  {
+    id: 2,
+    name: "Non-Workout Fuel"
+  }
+]
+
+export const Service = fetchedServices ? fetchedServices : dummyservice;
