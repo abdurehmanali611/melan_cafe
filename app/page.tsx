@@ -3,7 +3,7 @@ import AboutContent from "@/components/AboutContent";
 import GalleryGrid from "@/components/GalleryGrid";
 import Hero from "@/components/Hero";
 import ServiceGrid from "@/components/ServiceGrid";
-import TestimonialsCarousel from "@/components/TestimonialsCarousel";
+import TestimonialCarousel from "@/components/TestimonialCarousel";
 import { Button } from "@/components/ui/button";
 import { Galleries, Service, Testimonials } from "@/siteConstants";
 import { useRouter } from "next/navigation";
@@ -51,7 +51,7 @@ export default function Home() {
         )}
       </section>
       <section>
-        <TestimonialsCarousel testimonials={sampleTestimonials} />
+        <TestimonialCarousel testimonials={sampleTestimonials} />
         {testimonials.length > 3 && (
           <Button onClick={() => router.push("/About")}>View More</Button>
         )}

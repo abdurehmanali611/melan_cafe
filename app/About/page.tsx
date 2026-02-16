@@ -1,5 +1,5 @@
 import AboutContent from "@/components/AboutContent";
-import TestimonialsCarousel from "@/components/TestimonialCarousel";
+import TestimonialCarousel from "@/components/TestimonialCarousel";
 import { Testimonials } from "@/siteConstants";
 
 export default function About() {
@@ -9,7 +9,7 @@ export default function About() {
         <AboutContent />
       </section>
       <section>
-        <TestimonialsCarousel testimonials={Testimonials} />
+        <TestimonialCarousel testimonials={Testimonials} />
       </section>
     </div>
   );
