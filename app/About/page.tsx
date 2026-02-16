@@ -1,3 +1,4 @@
+"use client"
 import AboutContent from "@/components/AboutContent";
 import TestimonialCarousel from "@/components/TestimonialCarousel";
 import { Testimonials } from "@/siteConstants";
