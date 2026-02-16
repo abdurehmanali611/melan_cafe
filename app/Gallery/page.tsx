@@ -4,9 +4,7 @@ import { Galleries } from "@/siteConstants";
 export default function Gallery() {
   return (
     <div>
-      <section>
-        <GalleryGrid gallery={Galleries} />
-      </section>
+      <GalleryGrid gallery={Galleries} />
     </div>
   );
 }

@@ -1,5 +1,3 @@
-import { GetServices } from "./lib/actions";
-
 export const NavbarContents = [
   { id: 1, name: "Home", link: "/" },
   { id: 2, name: "About Us", link: "/About" },
@@ -32,10 +30,9 @@ export const Testimonials = [
   },
 ];
 
-const dummyservice = [
+const Services = [
   {
     title: "Lunch",
-    type: "Food",
     name: "Protein",
     price: 440,
     image: "/assets/food_1.jpg",
@@ -47,7 +44,6 @@ const dummyservice = [
   },
   {
     title: "BreakFast",
-    type: "Food",
     name: "Protein",
     price: 440,
     image: "/assets/food_2.jpg",
@@ -59,7 +55,6 @@ const dummyservice = [
   },
   {
     title: "Workout Fuel",
-    type: "Food",
     name: "Protein",
     price: 440,
     image: "/assets/food_3.jpg",
@@ -71,8 +66,6 @@ const dummyservice = [
   },
 ];
 
-const fetchedServices = await GetServices();
-
 export const Galleries = [
   { image: "/assets/drink_1.jpg", type: "Drink", title: "Drink 1" },
   { image: "/assets/drink_2.jpg", type: "Drink", title: "Drink 2" },
@@ -81,13 +74,13 @@ export const Galleries = [
 
 export const selectionServices = [
   { id: 1, name: "Default" },
-  { id: 2, name: "Food" },
-  { id: 3, name: "Drink" },
-  { id: 4, name: "Workout Fuel" },
-  { id: 5, name: "BreakFast" },
-  { id: 6, name: "Lunch" },
-  { id: 7, name: "Dinner" },
-  { id: 8, name: "Snacks" },
+  { id: 2, name: "BreakFast" },
+  { id: 3, name: "Lunch" },
+  { id: 4, name: "Dinner" },
+  { id: 5, name: "Snacks" },
+  { id: 6, name: "Desert" },
+  { id: 7, name: "Juices" },
+  { id: 8, name: "Beverages" }
 ];
 
 export const serviceTitles = [
@@ -103,17 +96,22 @@ export const serviceTitles = [
     id: 3,
     name: "Dinner",
   },
-];
-
-export const workout = [
   {
-    id: 1,
-    name: "Workout Fuel"
+    id: 4,
+    name: "Snacks",
   },
   {
-    id: 2,
-    name: "Non-Workout Fuel"
+    id: 5,
+    name: "Desert"
+  },
+  {
+    id: 6,
+    name: "Beverages"
+  },
+  {
+    id: 7,
+    name: "Juices"
   }
-]
+];
 
-export const Service = fetchedServices && fetchedServices.length > 0 ? fetchedServices : dummyservice;
+export const Service = Services;

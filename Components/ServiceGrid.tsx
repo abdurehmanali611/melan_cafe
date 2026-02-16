@@ -7,7 +7,6 @@ interface Service {
   image: string;
   nutrient: Array<string>
   price: number;
-  type: string
   popular: boolean
   New: boolean
 }
@@ -30,11 +29,8 @@ export default function ServiceGrid({ services }: ServiceProps) {
                 image={service.image}
                 nutrient={service.nutrient}
                 price={service.price}
-                type={service.type}
                 title={service.title}
                 description={service.description}
-                popular={service.popular}
-                New={service.New}
               />
             ))}
         </div>

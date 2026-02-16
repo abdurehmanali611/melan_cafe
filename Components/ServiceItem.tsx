@@ -2,7 +2,6 @@ import Image from "next/image";
 import {
   Card,
   CardContent,
-  CardDescription,
   CardFooter,
   CardHeader,
   CardTitle,
@@ -15,9 +14,6 @@ interface Service {
   image: string;
   nutrient: Array<string>;
   price: number;
-  type: string;
-  popular: boolean
-  New: boolean
 }
 
 export default function ServiceItem({
@@ -25,11 +21,8 @@ export default function ServiceItem({
   image,
   nutrient,
   price,
-  type,
   title,
-  description,
-  popular,
-  New
+  description
 }: Service) {
   return (
     <Card>
@@ -40,9 +33,6 @@ export default function ServiceItem({
             <h2 className="text-lg font-serif font-semibold">{title}</h2>
           </div>
         </CardTitle>
-        <CardDescription className="bg-green-500 text-black text-sm font-semibold font-serif py-1 w-fit px-4 rounded-xl">
-          {type}
-        </CardDescription>
       </CardHeader>
       <CardContent>
         <div className="flex flex-col gap-5">
